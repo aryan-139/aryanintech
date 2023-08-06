@@ -1,0 +1,2 @@
+# aryanintech
+Minimal Personal Portfolio
