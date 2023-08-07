@@ -7,32 +7,30 @@ import Button from '@mui/material/Button';
 
 const Navbar = () => {
   return (
-    <AppBar  sx={{ backgroundColor: 'transparent' }}>
-      <Toolbar sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-        {/* Left-aligned text */}
-        <div>
-          <Typography variant="h5" component="div" color="white" sx={{ fontSize: '24px', fontWeight: 'bold' }}>
-            aryanintech
-          </Typography>
-        </div>
+    <AppBar position='fixed'  sx={{ backgroundColor: 'transparent' }}>
+      <Toolbar sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+
         {/* Center-aligned buttons */}
         <div>
-          <Button component={Link} to="/home" color="inherit" sx={{ color: 'white', mx: 1, fontSize: '16px' }}>
+        <Button component={Link} to="/" color="inherit" sx={{ color: 'white', mx: 1, fontSize: '16px', '&:hover': { color: 'orange' } }}>
+            Home
+          </Button>
+        <Button component={Link} to="/about" color="inherit" sx={{ color: 'white', mx: 1, fontSize: '16px', '&:hover': { color: 'orange' } }}>
             About
           </Button>
-          <Button component={Link} to="/about" color="inherit" sx={{ color: 'white', mx: 1, fontSize: '16px' }}>
+          {/* <Button component={Link} to="/timeline" color="inherit" sx={{ color: 'white', mx: 1, fontSize: '16px', '&:hover': { color: 'orange' } }}>
             Timeline
-          </Button>
-          <Button component={Link} to="/about" color="inherit" sx={{ color: 'white', mx: 1, fontSize: '16px' }}>
+          </Button> */}
+          <Button component={Link} to="/skills" color="inherit" sx={{ color: 'white', mx: 1, fontSize: '16px', '&:hover': { color: 'orange' } }}>
             Skills
           </Button>
-          <Button component={Link} to="/about" color="inherit" sx={{ color: 'white', mx: 1, fontSize: '16px' }}>
+          {/* <Button component={Link} to="/projects" color="inherit" sx={{ color: 'white', mx: 1, fontSize: '16px', '&:hover': { color: 'orange' } }}>
             Projects
-          </Button>
-          <Button component={Link} to="/contact" color="inherit" sx={{ color: 'white', mx: 1, fontSize: '16px' }}>
+          </Button> */}
+          <Button component={Link} to="/contact" color="inherit" sx={{ color: 'white', mx: 1, fontSize: '16px', '&:hover': { color: 'orange' } }}>
             Contact
           </Button>
-          <Button component={Link} to="/about" color="inherit" sx={{ color: 'white', mx: 1, fontSize: '16px' }}>
+          <Button href="https://drive.google.com/file/d/124bFbuBcashy5awaIRWBBBlEwfS-X6_S/view?usp=sharing" color="inherit" sx={{ color: 'white', mx: 1, fontSize: '16px' , '&:hover': { color: 'orange' }}}>
             Resume
           </Button>
         </div>

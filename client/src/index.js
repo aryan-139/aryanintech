@@ -1,18 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import About from './components/About';
+import Navbar from './components/Navbar';
+import Intro from './components/Intro';
+import Skills from './components/Skills';
+import Contact from './components/Contact';
+import Projects from './components/Projects';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Router>
+    <BrowserRouter>
+    <Navbar />
       <Routes>
         <Route path="/" element={<App />} />
+        <Route path="/about" element={<Intro />} />
+        <Route path="/timeline" element={<About />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
-    </Router>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

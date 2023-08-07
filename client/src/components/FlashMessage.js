@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 const textList = [
   'Life is too short to write documentation.',
@@ -39,11 +39,27 @@ const FlashMessage = () => {
   }, [index, isTyping, text]);
 
   return (
-    <div className="typewriter-container">
+    <Box justifyContent="center" marginTop="25%" marginBottom="0%"
+    sx={{
+      top: 0,
+      left: 0,
+      width: '100%',
+      height: '100vh',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      // backgroundColor: 'rgba(0,0,0,0.5)',
+      zIndex: 1,
+
+    }}
+    >
+       <div className="typewriter-container">
       <Typography variant="h3" component="div" color="white" className="typewriter" sx={{ fontFamily: 'Times New Roman, serif' }}>
         {text}
       </Typography>
     </div>
+    </Box>
+   
   );
 };
 
