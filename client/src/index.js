@@ -10,6 +10,7 @@ import Intro from './components/Intro';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Projects from './components/Projects';
+import Timeline from './components/Timeline';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,7 +20,7 @@ root.render(
       <Routes>
         <Route path="/" element={<App />} />
         <Route path="/about" element={<Intro />} />
-        <Route path="/timeline" element={<About />} />
+        <Route path="/timeline" element={<Timeline />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />

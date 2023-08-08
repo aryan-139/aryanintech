@@ -18,9 +18,9 @@ const Navbar = () => {
         <Button component={Link} to="/about" color="inherit" sx={{ color: 'white', mx: 1, fontSize: '16px', '&:hover': { color: 'orange' } }}>
             About
           </Button>
-          {/* <Button component={Link} to="/timeline" color="inherit" sx={{ color: 'white', mx: 1, fontSize: '16px', '&:hover': { color: 'orange' } }}>
+          <Button component={Link} to="/timeline" color="inherit" sx={{ color: 'white', mx: 1, fontSize: '16px', '&:hover': { color: 'orange' } }}>
             Timeline
-          </Button> */}
+          </Button>
           <Button component={Link} to="/skills" color="inherit" sx={{ color: 'white', mx: 1, fontSize: '16px', '&:hover': { color: 'orange' } }}>
             Skills
           </Button>

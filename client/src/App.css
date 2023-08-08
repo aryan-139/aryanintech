@@ -2,6 +2,30 @@
   text-align: center;
 }
 
+.timeline-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  width: 45%;
+}
+
+.timeline {
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.timeline-year {
+  text-indent: 80px;
+  margin-left: 40px;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  padding: 5px 10px;
+  color: white;
+}
+
 .app-container {
   display: flex;
   flex-direction: column;
